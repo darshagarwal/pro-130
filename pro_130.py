@@ -22,4 +22,6 @@ print(df)
 cleaned_df = df.dropna()
 print(cleaned_df)
 
+cleaned_df.reset_index(drop=True,inplace = True)
+
 cleaned_df.to_csv('cleaned_data.csv')
